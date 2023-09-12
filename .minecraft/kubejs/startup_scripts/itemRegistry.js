@@ -1,6 +1,37 @@
 //Microminers
 StartupEvents.registry('item', event => {
 
+    //Smores
+    let smoreLang = [
+        `S'more S'mingot`,
+        `MoreS'more DoubleS'mingot`,
+        `FourS'more QuadS'mingot`,
+        `EightS'more OctoS'mingot`,
+        `SixteenS'more HexadecaS'mingot`,
+        `Half-stack-o'-S'more TriacontadyoS'mingot`,
+        `Stack-o'-S'more HexecontatessaraS'mingot`
+    ];
+
+    let smoreHunger = [
+        4, 10, 22, 46, 94, 190, 382
+    ]
+    let smoreSaturation = [
+        12, 76, 379, 1675, 7032, 28805, 116587
+    ]
+
+
+
+    for (let i = 0; i <= 6; i++) {
+
+        event.create(`smore_${2**i}`).food(food => {
+            food 
+                .hunger(smoreHunger[i]*2)
+                .saturation(smoreSaturation[i]/(1+4*smoreHunger[i]) * 2)
+        }).displayName(smoreLang[i]).maxStackSize(64);
+        
+    }   
+
+
     event.create('microminer_t1').displayName("\u00A7eSteel Plated Micro Miner [Tier One]").maxStackSize(16)
     event.create('microminer_t2').displayName("\u00A7eTitanium Plated Micro Miner [Tier Two]").maxStackSize(16)
     event.create('microminer_t3').displayName("\u00A7eTungsten Carbide Plated Micro Miner [Tier Three]").maxStackSize(16)
