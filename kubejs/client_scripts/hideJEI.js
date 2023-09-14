@@ -1,5 +1,0 @@
-JEIEvents.hideItems(event => {
-
-
-
-})
