@@ -93,14 +93,80 @@ ServerEvents.recipes(event => {
     )
 
     // Pattern Provider
+    event.remove({ output: 'ae2:pattern_provider' })
+    event.shaped(
+        Item.of('ae2:pattern_provider'), [
+            'ABA',
+            'CDE',
+            'AAA'
+        ], {
+            A: 'gtceu:aluminium_plate',
+            B: 'gtceu:mv_robot_arm',
+            C: 'ae2:annihilation_core',
+            D: 'gtceu:mv_machine_hull',
+            E: 'ae2:formation_core'
+        }
+    )
 
     // Molecular Assembler
+    event.remove({ output: 'ae2:molecular_assembler' })
+    event.shaped(
+        Item.of('ae2:molecular_assembler'), [
+            'ABA',
+            'CDE',
+            'ABA'
+        ], {
+            A: 'gtceu:aluminium_plate',
+            B: 'ae2:quartz_glass',
+            C: 'ae2:annihilation_core',
+            D: 'minecraft:crafting_table',
+            E: 'ae2:formation_core'
+        }
+    )
 
     // Interface
+    event.remove({ output: 'ae2:interface' })
+    event.shaped(
+        Item.of('ae2:interface'), [
+            'ABA',
+            'CDE',
+            'AAA'
+        ], {
+            A: 'gtceu:certus_quartz_plate',
+            B: 'gtceu:mv_conveyor_module',
+            C: 'ae2:annihilation_core',
+            D: 'gtceu:mv_machine_hull',
+            E: 'ae2:formation_core'
+        }
+    )
 
     // Quantum Ring
+    event.remove({ output: 'ae2:quantum_ring' })
+    event.shaped(
+        Item.of('ae2:quantum_ring'), [
+            'ABA',
+            'BCB',
+            'ABA'
+        ], {
+            A: 'gtceu:stainless_steel_plate',
+            B: 'gtceu:certus_quartz_plate',
+            C: 'gtceu:quantum_star',
+        }
+    )
 
     // Quantum Link Chamber
+    event.remove({ output: 'ae2:quantum_link' })
+    event.shaped(
+        Item.of('ae2:quantum_link'), [
+            'ABA',
+            'BCB',
+            'ABA'
+        ], {
+            A: 'ae2:quartz_glass',
+            B: 'ae2:fluix_pearl',
+            C: 'gregtech:certus_quartz_plate'
+        }
+    )
 
     // Storage Component
 
@@ -116,33 +182,39 @@ ServerEvents.recipes(event => {
             B: 'gtceu:electrical_steel_plate'
         }
     )
+
     // CPUs
-    
-// PackagedAuto 
-    // Packager
 
-    // Unpackager
+    // Charger
+    event.remove({ output: 'ae2:charger' })
+    event.shaped(
+        Item.of('ae2:charger'), [
+            'ABA',
+            'A  ',
+            'ABA'
+        ], {
+            A: 'gtceu:dark_steel_plate',
+            B: 'gtceu:certus_quartz_plate'
+        }
+    )
 
-    // Packager Extension
-    
-    // Package Encoder
 
-    // Pauto Pattern
-
-    // Pauto Components
-
-    // 5x5 Pauto Table
-
-    // 7x7 Pauto Table
-
-    // 9x9 Pauto Table
-
-    // Combination Pauto Crafter
-
-    // Marked Pedestal
-    
 // Extended AE2
     // Big Drive
+    event.remove({ output: 'expatternprovider:ex_drive' })
+    event.shaped(
+        Item.of('expatternprovider:ex_drive'), [
+            'ABA',
+            'CDC',
+            'AEA'
+        ], {
+            A: 'kubejs:fluix_plate',
+            B: 'ae2:capacity_card',
+            C: 'ae2:spatial_pylon',
+            D: 'ae2:drive',
+            E: 'gtceu:ev_machine_hull'
+        }
+    )
 
     // Big Pattern Provider
 })
