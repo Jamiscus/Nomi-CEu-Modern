@@ -1,3 +1,5 @@
+# THIS BRANCH IS CURRENTLY OUTDATED AND WON'T BE UPDATED IN THE NEAR FUTURE
+
 Nomifactory
 =====
 There are currently multiples branches for developpment
