@@ -198,11 +198,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("osmiridiumyes")
         .dust().ore()
         .element(GTElements.get("osmiridiumyes"))
+        .components(GTMaterials.Osmium, 8, GTMaterials.Iridium, 2)
         .iconSet('dull')
 
     event.create("iridosmineyes")
         .dust().ore()
         .element(GTElements.get("iridosmineyes"))
+        .components(GTMaterials.Iridium, 8, GTMaterials.Osmium, 2)
         .iconSet('dull')
 
     event.create("kaemanite")
@@ -347,9 +349,15 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("soularium")
         .ingot().fluid()
         .element(GTElements.get("soularium"))
-        .color(0x7c674)
+        .color(0x7c674d)
         .iconSet('metallic')
         .flags(GTMaterialFlags.GENERATE_PLATE)
+
+    event.create("dark_soularium")
+        .ingot().fluid()
+        .element(GTElements.get("dark_soularium"))
+        .color(0x7c674d)
+        .iconSet('metallic')
 
     event.create("end_steel")
         .ingot().fluid()
@@ -369,4 +377,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xffffff)
         .iconSet('shiny')
         .cableProperties(2147483647, 4, 0, true)
+})
+
+//Screret's dark magic
+const $PropertyKey = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey')
+const $IngotProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.IngotProperty')
+
+GTCEuStartupEvents.registry('gtceu:material', event => {
+    GTMaterials.Lutetium.setProperty($PropertyKey.INGOT, new $IngotProperty())
 })
