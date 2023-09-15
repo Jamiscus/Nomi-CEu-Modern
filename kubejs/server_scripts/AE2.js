@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
     // Inscriber
     event.remove({ output: 'ae2:inscriber' })
     event.shaped(
-        Item.of('ae2:drive'), [
+        Item.of('ae2:inscriber'), [
             'ABA',
             'CDA',
             'ABA'
@@ -105,7 +105,17 @@ ServerEvents.recipes(event => {
     // Storage Component
 
     // Storage Housing
-
+    event.remove({ output: 'ae2:item_cell_housing' })
+    event.shaped(
+        Item.of('ae2:item_cell_housing'), [
+            'ABA',
+            'B B',
+            'ABA'
+        ], {
+            A: 'gtceu:red_alloy_fine_wire',
+            B: 'gtceu:electrical_steel_plate'
+        }
+    )
     // CPUs
     
 // PackagedAuto 
