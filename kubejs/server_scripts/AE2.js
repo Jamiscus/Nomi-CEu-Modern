@@ -132,7 +132,7 @@ ServerEvents.recipes(event => {
             'CDE',
             'AAA'
         ], {
-            A: 'gtceu:certus_quartz_plate',
+            A: 'gtceu:aluminium_plate',
             B: 'gtceu:mv_conveyor_module',
             C: 'ae2:annihilation_core',
             D: 'gtceu:mv_machine_hull',
@@ -145,12 +145,13 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('ae2:quantum_ring'), [
             'ABA',
-            'BCB',
+            'DCD',
             'ABA'
         ], {
             A: 'gtceu:stainless_steel_plate',
-            B: 'gtceu:certus_quartz_plate',
+            B: 'ae2:calculation_processor',
             C: 'gtceu:quantum_star',
+            D: 'ae2:engineering_processor'
         }
     )
 
@@ -168,7 +169,24 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // Storage Component
+    // Storage Cell Removal
+    event.remove({ id: 'ae2:network/cells/item_storage_cell_1k' })
+    event.remove({ id: 'ae2:network/cells/item_storage_cell_4k' })
+    event.remove({ id: 'ae2:network/cells/item_storage_cell_16k' })
+    event.remove({ id: 'ae2:network/cells/item_storage_cell_64k' })
+    event.remove({ id: 'ae2:network/cells/item_storage_cell_256k' })
+
+    event.remove({ id: 'ae2:network/cells/fluid_storage_cell_1k' })
+    event.remove({ id: 'ae2:network/cells/fluid_storage_cell_4k' })
+    event.remove({ id: 'ae2:network/cells/fluid_storage_cell_16k' })
+    event.remove({ id: 'ae2:network/cells/fluid_storage_cell_64k' })
+    event.remove({ id: 'ae2:network/cells/fluid_storage_cell_256k' })
+
+    event.remove({ id: 'ae2:network/cells/spatial_storage_cell_2_cubed' })
+    event.remove({ id: 'ae2:network/cells/spatial_storage_cell_16_cubed' })
+    event.remove({ id: 'ae2:network/cells/spatial_storage_cell_128_cubed' })
+
+    event.remove({ id: 'ae2:network/cells/view_cell' })
 
     // Storage Housing
     event.remove({ output: 'ae2:item_cell_housing' })
@@ -183,7 +201,32 @@ ServerEvents.recipes(event => {
         }
     )
 
+    event.remove({ output: 'ae2:fluid_cell_housing' })
+    event.shaped(
+        Item.of('ae2:item_cell_housing'), [
+            'ABA',
+            'B B',
+            'ABA'
+        ], {
+            A: 'gtceu:red_alloy_fine_wire',
+            B: 'gtceu:energetic_alloy_plate'
+        }
+    )
+
     // CPUs
+    event.remove({ output: 'ae2:crafting_unit' })
+    event.shaped(
+        Item.of('ae2:crafting_unit'), [
+            'ABA',
+            'CDC',
+            'ABA'
+        ], {
+            A: 'gtceu:aluminium_plate',
+            B: 'ae2:calculation_processor',
+            C: 'ae2:fluix_glass_cable',
+            D: 'ae2:logic_processor'
+        }
+    )
 
     // Charger
     event.remove({ output: 'ae2:charger' })
@@ -198,6 +241,84 @@ ServerEvents.recipes(event => {
         }
     )
 
+    // Matter Condenser
+    event.remove({ output: '' })
+    event.shaped(
+        Item.of(''), [
+            'AAA',
+            'ABA',
+            'AAA'
+        ], {
+            A: 'gtceu:titanium_plate',
+            B: 'gtceu:quantum_star'
+        }
+    )
+
+    // Storage Component 1K
+    event.remove({ output: '' })
+    event.shaped(
+        Item.of(''), [
+            'ABA',
+            'BCB',
+            'ABA'
+        ], {
+            A: '',
+            B: '',
+            C: ''
+        }
+    )
+
+    // Storage Component 4K
+    event.remove({ output: '' })
+    event.shaped(
+        Item.of(''), [
+            'ABA',
+            'BCB',
+            'ADA'
+        ], {
+            A: '',
+            B: ''
+        }
+    )
+
+    // Storage Component 16K
+    event.remove({ output: '' })
+    event.shaped(
+        Item.of(''), [
+            'AAA',
+            'ABA',
+            'AAA'
+        ], {
+            A: 'gtceu:titanium_plate',
+            B: 'gtceu:quantum_star'
+        }
+    )
+
+    // Storage Component 64K
+    event.remove({ output: '' })
+    event.shaped(
+        Item.of(''), [
+            'AAA',
+            'ABA',
+            'AAA'
+        ], {
+            A: 'gtceu:titanium_plate',
+            B: 'gtceu:quantum_star'
+        }
+    )
+
+    // Storage Component 256K
+    event.remove({ output: '' })
+    event.shaped(
+        Item.of(''), [
+            'AAA',
+            'ABA',
+            'AAA'
+        ], {
+            A: 'gtceu:titanium_plate',
+            B: 'gtceu:quantum_star'
+        }
+    )
 
 // Extended AE2
     // Big Drive
