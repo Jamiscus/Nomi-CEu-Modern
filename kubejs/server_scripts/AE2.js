@@ -203,7 +203,7 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: 'ae2:fluid_cell_housing' })
     event.shaped(
-        Item.of('ae2:item_cell_housing'), [
+        Item.of('ae2:fluid_cell_housing'), [
             'ABA',
             'B B',
             'ABA'
@@ -242,9 +242,9 @@ ServerEvents.recipes(event => {
     )
 
     // Matter Condenser
-    event.remove({ output: '' })
+    event.remove({ output: 'ae2:condenser' })
     event.shaped(
-        Item.of(''), [
+        Item.of('ae2:condenser'), [
             'AAA',
             'ABA',
             'AAA'
@@ -255,70 +255,99 @@ ServerEvents.recipes(event => {
     )
 
     // Storage Component 1K
-    event.remove({ output: '' })
+    event.remove({ output: 'ae2:cell_component_1k' })
     event.shaped(
-        Item.of(''), [
+        Item.of('ae2:cell_component_1k'), [
             'ABA',
             'BCB',
             'ABA'
         ], {
-            A: '',
-            B: '',
-            C: ''
+            A: 'minecraft:glass',
+            B: 'gtceu:red_alloy_plate',
+            C: '#forge:circuits/lv'
         }
     )
 
     // Storage Component 4K
-    event.remove({ output: '' })
+    event.remove({ output: 'ae2:cell_component_4k' })
     event.shaped(
-        Item.of(''), [
-            'ABA',
+        Item.of('ae2:cell_component_4k'), [
+            'ADA',
             'BCB',
-            'ADA'
+            'ABA'
         ], {
-            A: '',
-            B: ''
+            A: 'minecraft:glass',
+            B: 'ae2:cell_component_1k',
+            C: '#forge:circuits/mv',
+            D: 'ae2:calculation_processor'
         }
     )
 
     // Storage Component 16K
-    event.remove({ output: '' })
+    event.remove({ output: 'ae2:cell_component_16k' })
     event.shaped(
-        Item.of(''), [
-            'AAA',
-            'ABA',
-            'AAA'
+        Item.of('ae2:cell_component_16k'), [
+            'ADA',
+            'BCB',
+            'ABA'
         ], {
-            A: 'gtceu:titanium_plate',
-            B: 'gtceu:quantum_star'
+            A: 'minecraft:glass',
+            B: 'ae2:cell_component_4k',
+            C: '#forge:circuits/hv',
+            D: 'ae2:engineering_processor'
         }
     )
 
     // Storage Component 64K
-    event.remove({ output: '' })
+    event.remove({ output: 'ae2:cell_component_64k' })
     event.shaped(
-        Item.of(''), [
-            'AAA',
-            'ABA',
-            'AAA'
+        Item.of('ae2:cell_component_64k'), [
+            'ADA',
+            'BCB',
+            'ABA'
         ], {
-            A: 'gtceu:titanium_plate',
-            B: 'gtceu:quantum_star'
+            A: 'ae2:logic_processor',
+            B: 'ae2:cell_component_16k',
+            C: '#forge:circuits/ev',
+            D: 'ae2:engineering_processor'
         }
     )
 
     // Storage Component 256K
-    event.remove({ output: '' })
+    event.remove({ output: 'ae2:cell_component_256k' })
     event.shaped(
-        Item.of(''), [
-            'AAA',
-            'ABA',
-            'AAA'
+        Item.of('ae2:cell_component_256k'), [
+            'ADA',
+            'BCB',
+            'ABA'
         ], {
-            A: 'gtceu:titanium_plate',
-            B: 'gtceu:quantum_star'
+            A: 'ae2:logic_processor',
+            B: 'ae2:cell_component_64k',
+            C: '#forge:circuits/iv',
+            D: 'ae2:engineering_processor'
         }
     )
+
+    // Wireless Receiver
+    event.remove({ output: 'ae2:wireless_receiver' })
+    event.shaped(
+        Item.of('ae2:wireless_receiver'), [
+            ' A ',
+            'BCB',
+            ' B '
+        ], {
+            A: 'gtceu:iv_emitter',
+            B: 'gtceu:titanium_plate',
+            C: 'ae2:fluix_pearl'
+        }
+    )
+
+    // AE2 Cards
+
+    // Level Emitter
+
+    // Network Tool (SET RECIPE IF AE2 GLITCH IS FIXED)
+    event.remove({ output: 'ae2:network_tool'})
 
 // Extended AE2
     // Big Drive
@@ -339,3 +368,5 @@ ServerEvents.recipes(event => {
 
     // Big Pattern Provider
 })
+
+// AE2WT
