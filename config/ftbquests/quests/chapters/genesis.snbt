@@ -1,0 +1,1163 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "genesis"
+	group: ""
+	icon: "minecraft:iron_ingot"
+	id: "0654B76C306712BE"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "avaritia:block/infinity_block"
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.5d
+			y: 10.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "avaritia:block/infinity_block"
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.0d
+			y: 9.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "avaritia:block/infinity_block"
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.5d
+			y: 10.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "avaritia:block/infinity_block"
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.0d
+			y: 9.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "avaritia:block/infinity_block"
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.0d
+			y: 8.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "avaritia:block/infinity_block"
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.0d
+			y: 8.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"This pack is intended to be played in a &blost cities/ Overworld dimension&r"
+				""
+				"If you're playing with friends, don't forget to invite them to the"
+				"&eFTB Teams party&r. "
+				""
+				"If you wish to build your base in a skyblock world, place the &6Void World Cake&r down on the ground, and eat a slice to be sent"
+				"to the void. Please note that you'll still need to return to the Lost Cities/Overworld dimension to mine, but you can freely build in complete safety in the &eVoid&r"
+				""
+				"Features new to &2CEu&r and quests with new content will be higlighted in &2dark green&r."
+				""
+				"Features new to &1Modern&r and quests with new content will be higlighted in &1dark blue&r."
+			]
+			icon: "minecraft:crafting_table"
+			id: "66FCC26399376B55"
+			rewards: [
+				{
+					count: 4
+					id: "2A12A8AF5EA162BA"
+					item: {
+						Count: 1b
+						id: "gtceu:diamond_mining_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "031A59BA80B8796A"
+					item: "minecraft:bedrock"
+					title: "Void world cake"
+					type: "item"
+				}
+				{
+					id: "48B3D498AC0B2BE0"
+					item: "minecraft:bedrock"
+					title: "Overworld cake"
+					type: "item"
+				}
+				{
+					id: "3451D4471E82E65A"
+					item: {
+						Count: 1b
+						id: "gtceu:prospector.hv"
+						tag: {
+							Charge: 1600000L
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Welcome to Nomifactory Modern"
+			tasks: [{
+				id: "1FF132DED1748D11"
+				title: "Genesis #3"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["66FCC26399376B55"]
+			description: ["This quest is repeatable and gives you a free cake to the Void World or Overworld. You can also refill your cakes with items indicated in their tooltips."]
+			id: "542F0090D8975D3C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1F03FEFB5B2A3B47"
+				table_id: 7942624913962637807L
+				type: "choice"
+			}]
+			subtitle: "Cakes are magical!"
+			tasks: [{
+				id: "423B4FAF11B1C0FA"
+				title: "Cake Based Dimensional Transit"
+				type: "checkmark"
+			}]
+			title: "Cake Based Dimensional Transit"
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["66FCC26399376B55"]
+			description: [
+				"&bStorage Drawers&r provide a hufe amount of storage for a single item type. Use them for things you have a lot of, such as stone, dirt and ores."
+				""
+				"&5Framed Drawers not implemented yet&r"
+				""
+				"Furthermore, you can do special stuff with your drawers, with &6Keys&r! Search &e@StorageDrawers Keys&r in &bJEI&r to see them! You can do things from ´locking´ the drawer. Meaning only that item can enter the drawer, show how many items are in te drawer, and even remove the display of items!"
+				""
+				"&4Please not that excessive use of the quantify key may lead to lag. &r"
+			]
+			id: "4A696D4BA5442928"
+			subtitle: "This quest completes with any wood-type drawer."
+			tasks: [{
+				id: "02543E826A43185A"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "storagedrawers:drawers"
+					}
+				}
+				title: "Any #storagedrawers:drawers"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["66FCC26399376B55"]
+			description: ["&1Still very barebone at the moment. Currently shows which multiblocks can be made at what tier. How machines function, ore generation, tools, multiblocks, filters and finally covers.&r"]
+			id: "07DC7FC23332B847"
+			rewards: [{
+				id: "280FA1B26199881B"
+				item: "gtceu:terminal"
+				type: "item"
+			}]
+			subtitle: "GT Guide book"
+			tasks: [{
+				id: "380954E57B7C36EC"
+				title: "Terminal"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["66FCC26399376B55"]
+			icon: "gtceu:wrought_iron_ingot"
+			id: "2E8BFA2E719B1C47"
+			tasks: [
+				{
+					count: 12L
+					id: "674259A69F1EEC1C"
+					item: { Count: 12b, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "02A10A7E907718D5"
+					item: { Count: 12b, id: "gtceu:wrought_iron_ingot" }
+					type: "item"
+				}
+			]
+			title: "Iron supply"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2E8BFA2E719B1C47"]
+			description: [
+				"The &aCrescent Hammer&r is for use on machines from &bThermal Expansion&r, but can be used for basic wrench interactions with blocks from almost every mod."
+				""
+				"The &aYeta Wrench&r is used with machines and conduits from &bEnderIO&r, and has several special display modes(&6sneak-mouse wheel&r to switch between them)."
+				""
+				"The &aGregTech Wrench&r is used to rotate GregTech machines and redefine their output sides. &2It also has some of the capabilities of the other Wrenches now&r."
+				""
+				"You can see which mod a machines is from with the &1Blue text&r at the bottom of its tooltip."
+			]
+			icon: "enderio:yeta_wrench"
+			id: "04A0863937695AC4"
+			rewards: [{
+				id: "247FC44B6E456222"
+				item: "kubejs:nominickel"
+				type: "item"
+			}]
+			subtitle: "Confused about all the Wrenches yet?"
+			tasks: [
+				{
+					id: "70251EAC64217000"
+					item: "enderio:yeta_wrench"
+					type: "item"
+				}
+				{
+					id: "1F3EDCBF5EB70229"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_wrench"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "20854F1345AB6B1E"
+					item: "minecraft:bedrock"
+					title: "Crescent Hammer"
+					type: "item"
+				}
+				{
+					id: "14A2B3A144A9404C"
+					type: "custom"
+				}
+			]
+			title: "Wrenches Galore"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2E8BFA2E719B1C47"]
+			description: [
+				"There are lots of ways to upgrade and imporve your &aGrappling Hook&r, so play around with it."
+				""
+				"&1There is no curios slot for the Hook. So you'll have to keep it in your hotbar to use it.&r"
+			]
+			id: "5B31AB11CC640279"
+			rewards: [{
+				id: "5C2F124669C65506"
+				item: "kubejs:nominickel"
+				type: "item"
+			}]
+			subtitle: "A Grappling Hook is very useful in an urban environment."
+			tasks: [{
+				id: "3C1E57C56F5B5B92"
+				item: {
+					Count: 1b
+					id: "grapplemod:grapplinghook"
+					tag: {
+						Damage: 0
+						custom: {
+							angle: 20.0d
+							attract: 0b
+							attractradius: 3.0d
+							crc32: 2252267022L
+							detachonkeyrelease: 0b
+							doublehook: 0b
+							enderstaff: 0b
+							hookgravity: 1.0d
+							maxlen: 30.0d
+							motor: 0b
+							motoracceleration: 0.2d
+							motordampener: 0b
+							motormaxspeed: 4.0d
+							motorwhencrouching: 0b
+							motorwhennotcrouching: 1b
+							oneropepull: 0b
+							phaserope: 0b
+							playermovementmult: 1.0d
+							pullbackwards: 1b
+							reelin: 1b
+							repel: 0b
+							repelforce: 1.0d
+							rocket: 0b
+							rocket_active_time: 0.5d
+							rocket_force: 1.0d
+							rocket_refuel_ratio: 15.0d
+							rocket_vertical_angle: 0.0d
+							smartdoublemotor: 1b
+							smartmotor: 0b
+							sneakingangle: 10.0d
+							sneakingverticalthrowangle: 0.0d
+							sticky: 0b
+							throwspeed: 2.0d
+							verticalthrowangle: 0.0d
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2E8BFA2E719B1C47"]
+			description: [
+				"One of the eccentricities of the pack you'll need to get used to is the way th tools are displayed. Most tools can be made out of nearly ant metal, and &bJEI&r will display a huge number of options... every combination of every tool with every material. However, the pattern tio make the tool is always identical, so &ejust arrange the plates and ingots in the same manner as the examples, ignoring whatever material it says.&r"
+				"Rods where rods go, plates where plates, etc. The only restriction is that tools &emust be made from all of the same materials&r... you cannot mix and match different metals in a single item."
+				""
+				"For now make a &aHammer&r(not a &aMining Hammer&r, mind you... six ingots not plates). Hammers can be used to turn &etwo ingots into one plate.&r &6Plates&r can make a &aFile&r Files can make &6Rods&r, etc. Use JEI to work your way down the list of tools."
+				""
+				"&6Wrought Iron&r is probably your best bet for a tool material right now, but better materials will become available as"
+				"you progress. This quest accepts any tool material."
+			]
+			id: "4FE53F31E68F4C1C"
+			rewards: [{
+				count: 2
+				id: "1DA0C8E82ED7EAD8"
+				item: "kubejs:nominickel"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "A lot of tools!"
+			tasks: [
+				{
+					id: "04ED9B749EA44142"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "514CE965C8FB1452"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_file"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7226082DB71F551A"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_saw"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "705CACC01AD1C68E"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_wrench"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "290A0FE8C389AF05"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_screwdriver"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7B41907A63748FCA"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_wire_cutter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7298CFD7BA970AA8"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_mortar"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Some Starter Tools"
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4FE53F31E68F4C1C"]
+			icon: {
+				Count: 1b
+				id: "gtceu:iron_mining_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "07D45A3F8A74A61C"
+			tasks: [{
+				id: "39656E09593E3D83"
+				type: "checkmark"
+			}]
+			title: "Mining Hammers"
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4FE53F31E68F4C1C"]
+			id: "6FB3E3D9CA0F4B30"
+			tasks: [{
+				count: 3L
+				id: "7BA753DF38DEC329"
+				item: { Count: 3b, id: "gtceu:rubber_plate" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6FB3E3D9CA0F4B30"]
+			id: "78B5D55A3560B98E"
+			tasks: [{
+				id: "253D34B000F903DD"
+				item: {
+					Count: 1b
+					id: "gtceu:rubber_mallet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2E8BFA2E719B1C47"]
+			id: "7865CDE5CFE005DC"
+			tasks: [{
+				id: "6A2879717EF57D8A"
+				item: "ironfurnaces:iron_furnace"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7865CDE5CFE005DC"]
+			id: "0591171F13A45283"
+			tasks: [{
+				id: "14CDC80A449BD388"
+				item: "ironfurnaces:copper_furnace"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0591171F13A45283"]
+			id: "3F77EDE69BB649DA"
+			tasks: [{
+				id: "266C775298CDC137"
+				item: "ironfurnaces:silver_furnace"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6B121BEFD852BC2D"]
+			id: "1AE46C1970378083"
+			tasks: [{
+				id: "67B5E4F996C454C8"
+				item: "ironfurnaces:diamond_furnace"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3F77EDE69BB649DA"]
+			id: "6B121BEFD852BC2D"
+			tasks: [{
+				id: "0FD61CD4D237D131"
+				item: "ironfurnaces:gold_furnace"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["1AE46C1970378083"]
+			id: "3969150B59EA38A2"
+			tasks: [{
+				id: "223332FE4EEB31B0"
+				item: "ironfurnaces:obsidian_furnace"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["3969150B59EA38A2"]
+			id: "69E77BD01CFF65EB"
+			invisible: true
+			tasks: [{
+				id: "015B7C7A82AE67C5"
+				item: "ironfurnaces:netherite_furnace"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["4FE53F31E68F4C1C"]
+			id: "5430ED88A8D10502"
+			tasks: [{
+				id: "38E44244B336F941"
+				item: "minecraft:anvil"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1229234A71CE0A99"]
+			id: "57D1B1D74391A05F"
+			tasks: [{
+				id: "10632C37C6050A0C"
+				item: "minecraft:barrier"
+				type: "item"
+			}]
+			title: "Item Pipes"
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2E8BFA2E719B1C47"]
+			id: "7F291FE6247B57BC"
+			tasks: [{
+				id: "164127A0828A29E1"
+				item: "minecraft:barrier"
+				type: "item"
+			}]
+			title: "Crafting Station"
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2E8BFA2E719B1C47"]
+			id: "1B86EF5A24286787"
+			tasks: [{
+				id: "2BFE87C449C8D8F3"
+				item: "toolbelt:belt"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2E8BFA2E719B1C47"]
+			id: "5D97206C8135872B"
+			tasks: [{
+				id: "36D486BE19669899"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2E8BFA2E719B1C47"]
+			id: "64AAF0CD958D836A"
+			tasks: [
+				{
+					id: "150F57D9BEE7CCEE"
+					item: "enderio:pressurized_fluid_conduit"
+					type: "item"
+				}
+				{
+					id: "277C38246AE179F6"
+					item: "gtceu:potin_normal_fluid_pipe"
+					type: "item"
+				}
+			]
+			title: "Fluid Transport"
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2E8BFA2E719B1C47"]
+			icon: "gtceu:aluminium_ingot"
+			id: "53E600ADCC9DD608"
+			tasks: [{
+				id: "5E73C23D1FA65873"
+				title: "Material Tree"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2E8BFA2E719B1C47"]
+			icon: "kubejs:mote_of_omnium"
+			id: "0C173EF148EFEF8E"
+			tasks: [{
+				id: "647D560D77DBCEA5"
+				type: "checkmark"
+			}]
+			title: "End Game Tab"
+			x: -6.5d
+			y: 1.5d
+		}
+		{
+			icon: "kubejs:nomi_penny"
+			id: "115D2BEB18929C7C"
+			tasks: [{
+				id: "7275E7D7E7F140B8"
+				type: "checkmark"
+			}]
+			title: "Spend your coins !"
+			x: -8.5d
+			y: 1.0d
+		}
+		{
+			id: "0FF18D13CD42F48A"
+			tasks: [{
+				id: "4E72048527D74637"
+				item: "minecraft:barrier"
+				type: "item"
+			}]
+			title: "Infinite Water"
+			x: -3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"4FE53F31E68F4C1C"
+				"115D2BEB18929C7C"
+			]
+			id: "7C3B69B3DC09FE96"
+			tasks: [{
+				id: "7B4500A4503F2F6D"
+				item: {
+					Count: 1b
+					id: "hangglider:hang_glider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4FE53F31E68F4C1C"]
+			icon: "minecraft:redstone"
+			id: "1229234A71CE0A99"
+			tasks: [
+				{
+					count: 76L
+					id: "581CD7E50AC3F5E3"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "102B3966BE895F45"
+					item: { Count: 36b, id: "minecraft:copper_ingot" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "3CEB53996CBB7381"
+					item: { Count: 20b, id: "gtceu:tin_ingot" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "5A94EE9BCBADE6BF"
+					item: { Count: 16b, id: "minecraft:coal" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "77FEEB10E7B091B8"
+					item: { Count: 6b, id: "minecraft:gold_ingot" }
+					type: "item"
+				}
+			]
+			title: "More Materials"
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			icon: "minecraft:book"
+			id: "3B200AD6EFF90DFA"
+			tasks: [{
+				id: "7449A54608D60DF8"
+				type: "checkmark"
+			}]
+			title: "USE JEI USE JEI USE JEI USE JEI"
+			x: -8.5d
+			y: -0.5d
+		}
+		{
+			icon: "minecraft:tnt"
+			id: "6A7A480FAC6103D2"
+			tasks: [{
+				id: "78BC5B51125B35BD"
+				title: "Claim your chunks !"
+				type: "checkmark"
+			}]
+			x: -10.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1229234A71CE0A99"]
+			icon: "gtceu:red_alloy_dust"
+			id: "7FA0E6F3B466576C"
+			tasks: [
+				{
+					count: 16L
+					id: "6FE4A0D51F6AF22F"
+					item: { Count: 16b, id: "gtceu:copper_dust" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "6449998172457471"
+					item: { Count: 16b, id: "gtceu:red_alloy_dust" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "16D7046417209756"
+					item: { Count: 16b, id: "gtceu:red_alloy_ingot" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "57A26AF688B59DAB"
+					item: { Count: 32b, id: "gtceu:iron_dust" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "5627DEBC5B168743"
+					item: { Count: 32b, id: "gtceu:conductive_alloy_ingot" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "15CAA2C5B513BFC2"
+					item: { Count: 8b, id: "gtceu:red_alloy_plate" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "14B188414BF825E6"
+					item: { Count: 3b, id: "gtceu:red_alloy_single_wire" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "7B8835F95B9739D6"
+					item: { Count: 16b, id: "gtceu:conductive_alloy_single_wire" }
+					type: "item"
+				}
+			]
+			title: "From Dust to Wires"
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7FA0E6F3B466576C"]
+			id: "08948A23B3A17923"
+			tasks: [{
+				id: "7D0E23630A562F6A"
+				item: "enderio:energy_conduit"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"6FB3E3D9CA0F4B30"
+				"7FA0E6F3B466576C"
+			]
+			id: "12B95158E4C792DB"
+			tasks: [{
+				count: 12L
+				id: "24A84AB536BB27B0"
+				item: { Count: 12b, id: "gtceu:red_alloy_single_cable" }
+				type: "item"
+			}]
+			title: "Cables"
+			x: 2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0FF18D13CD42F48A"]
+			id: "39D4174834F3879D"
+			tasks: [{
+				id: "3D2D6D746FC51682"
+				item: "minecraft:barrier"
+				type: "item"
+			}]
+			title: "Dynamos"
+			x: -3.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["39D4174834F3879D"]
+			id: "098CF1FD284B09E7"
+			tasks: [{
+				id: "6CCAFF01C813229C"
+				item: "minecraft:barrier"
+				type: "item"
+			}]
+			title: "Fuel Catalyzer"
+			x: -5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"7FA0E6F3B466576C"
+				"747434DD99118DA4"
+			]
+			icon: "gtceu:resistor"
+			id: "58F9A5310D43A2B0"
+			tasks: [
+				{
+					count: 2L
+					id: "3531424527B8E732"
+					item: { Count: 2b, id: "gtceu:resistor" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3A7AC364B2EBF6D9"
+					item: { Count: 2b, id: "gtceu:vacuum_tube" }
+					type: "item"
+				}
+				{
+					id: "6F5AB3013B280937"
+					item: "gtceu:resin_printed_circuit_board"
+					type: "item"
+				}
+			]
+			title: "Electronic Subcomponents"
+			x: 2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"58F9A5310D43A2B0"
+				"12B95158E4C792DB"
+			]
+			icon: "gtceu:basic_electronic_circuit"
+			id: "7358461DB0D9A9AF"
+			tasks: [
+				{
+					id: "0DFBE070AAC08C6C"
+					item: "gtceu:basic_electronic_circuit"
+					type: "item"
+				}
+				{
+					id: "6D1F30CE04E0D26B"
+					item: "gtceu:steel_plate"
+					type: "item"
+				}
+			]
+			title: "Your First Circuit"
+			x: 2.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["1FF132DED1748D11"]
+			id: "747434DD99118DA4"
+			size: 1.5d
+			tasks: [
+				{
+					id: "35C6F2F120BD65AF"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "254A5A7997F2EF9E"
+					item: { Count: 32b, id: "gtceu:firebricks" }
+					type: "item"
+				}
+			]
+			title: "Primitive Steelworks"
+			x: 2.5d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"39D4174834F3879D"
+				"7358461DB0D9A9AF"
+				"08948A23B3A17923"
+				"747434DD99118DA4"
+			]
+			id: "297B523B6C503957"
+			tasks: [{
+				id: "3217FC6AD2AFA67A"
+				item: "gtceu:lv_4a_energy_converter"
+				type: "item"
+			}]
+			title: "Lv Power"
+			x: -1.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["297B523B6C503957"]
+			icon: "gtceu:hpic_wafer"
+			id: "5A94534682807314"
+			tasks: [{
+				id: "60242EACEEB6B6C8"
+				type: "checkmark"
+			}]
+			title: "A Primer on Power"
+			x: -1.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["5A94534682807314"]
+			icon: "gtceu:uhpic_wafer"
+			id: "2D31856F6EF1ED69"
+			size: 2.0d
+			tasks: [{
+				id: "44E7A2BF6528EC4E"
+				type: "checkmark"
+			}]
+			title: "Putting it all Together"
+			x: -1.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["297B523B6C503957"]
+			id: "2FA9404468E4BBD9"
+			tasks: [{
+				id: "0527876D6287634B"
+				item: "gtceu:lv_battery_buffer_4x"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["2FA9404468E4BBD9"]
+			id: "077AA27F26B7831F"
+			tasks: [{
+				count: 4L
+				id: "7923DEDAB3298371"
+				item: { Count: 4b, id: "gtceu:lv_battery_hull" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["2FA9404468E4BBD9"]
+			icon: "buildinggadgets2:gadget_building"
+			id: "5F9C7FB40AD2640B"
+			tasks: [
+				{
+					id: "449B547CDED79AE3"
+					item: "buildinggadgets2:gadget_building"
+					type: "item"
+				}
+				{
+					id: "30A321B32CDAF437"
+					item: "buildinggadgets2:gadget_exchanging"
+					type: "item"
+				}
+				{
+					id: "4763F5F3C0771FFA"
+					item: {
+						Count: 1b
+						id: "buildinggadgets2:gadget_copy_paste"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "284A671CC5192B50"
+					item: {
+						Count: 1b
+						id: "buildinggadgets2:gadget_cut_paste"
+						tag: {
+							pastereplace: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "51485964CFCB26B9"
+					item: "buildinggadgets2:gadget_destruction"
+					type: "item"
+				}
+			]
+			title: "Inspector Gadget"
+			x: -2.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["2FA9404468E4BBD9"]
+			id: "7E66445087E82F65"
+			tasks: [{
+				id: "7CE647770625D692"
+				item: {
+					Count: 1b
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:leadstone"
+						Throttle: 1.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["2FA9404468E4BBD9"]
+			id: "39394D5596FF8BC8"
+			tasks: [{
+				id: "36817E3C33876798"
+				item: {
+					Count: 1b
+					id: "enderio:electromagnet"
+					tag: {
+						Energy: {
+							EnergyStored: 0
+							MaxEnergyStored: 100000
+							MaxEnergyUse: 100000
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 12.5d
+		}
+		{
+			id: "58566C7BF4C22D86"
+			tasks: [{
+				id: "0AA42BA22D46012E"
+				item: "minecraft:barrier"
+				type: "item"
+			}]
+			title: "Calculators"
+			x: -10.0d
+			y: 1.0d
+		}
+		{
+			id: "0137ECCCD7A11A15"
+			tasks: [{
+				id: "0351F40C63136AD0"
+				item: "minecraft:barrier"
+				type: "item"
+			}]
+			title: "Effortless Building"
+			x: -10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["115D2BEB18929C7C"]
+			icon: "gtceu:redstone_crushed_ore"
+			id: "17E92ED356B6737F"
+			tasks: [{
+				id: "36817889D65727FA"
+				type: "checkmark"
+			}]
+			title: "Ore Doubling ?"
+			x: -8.5d
+			y: 2.5d
+		}
+		{
+			icon: "minecraft:writable_book"
+			id: "70026930847E8EC0"
+			tasks: [{
+				id: "1278CD7DD38F751A"
+				type: "checkmark"
+			}]
+			title: "Discord and Github"
+			x: -8.5d
+			y: 4.0d
+		}
+	]
+	title: "Genesis"
+}
