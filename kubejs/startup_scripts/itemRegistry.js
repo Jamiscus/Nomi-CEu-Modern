@@ -112,8 +112,6 @@ StartupEvents.registry('item', event => {
     event.create('dense_hydrogen').displayName("Dense Hydrogen").rarity('Uncommon')
     event.create('ultra_dense_hydrogen').displayName("Ultra Dense Hydrogen").rarity('Rare')
 
-    //TODO: Add Hand Framing Tool
-    event.create('hand_framing_tool').displayName("Hand Framing Tool [W.I.P]")
 
     //Add Thermal Series items that were missing
     event.create('aerotheum_dust').texture('kubejs:item/aerotheum_blend').displayName('\u00A77Aerotheum Dust')
@@ -141,6 +139,9 @@ StartupEvents.registry('item', event => {
     //PPC Stuff
     event.create('pulsating_mesh').displayName("Pulsating Mesh")
     event.create('pulsating_dust').displayName("Pulsating Dust")
+
+    //TODO: H-F-T
+    event.create('hand_framing_tool').displayName('Hand Framing Tool [SUPER W.I.P.]').maxStackSize(1).rarity("epic").texture('kubejs:textures/item/hft.png').tooltip(`Side: []`).tooltip('Rim: []').tooltip(`Front: []`).tooltip(`Currently debug tool`);
 
 })
 
