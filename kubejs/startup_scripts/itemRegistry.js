@@ -141,7 +141,7 @@ StartupEvents.registry('item', event => {
     event.create('pulsating_dust').displayName("Pulsating Dust")
 
     //TODO: H-F-T
-    event.create('hand_framing_tool').displayName('Hand Framing Tool [SUPER W.I.P.]').maxStackSize(1).rarity("epic").texture('kubejs:textures/item/hft.png').tooltip(`Side: []`).tooltip('Rim: []').tooltip(`Front: []`).tooltip(`Currently debug tool`);
+        event.create('hand_framing_tool').displayName('Hand Framing Tool [SUPER W.I.P.]').maxStackSize(1).rarity("epic").texture('kubejs:textures/item/hft.png');
 
 })
 

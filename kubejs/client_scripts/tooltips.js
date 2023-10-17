@@ -27,4 +27,15 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('hostilenetworks:overworld_prediction', '\u00A77Experience per item: 10')
     tooltip.add('hostilenetworks:nether_prediction', '\u00A77Experience per item: 20')
     tooltip.add('hostilenetworks:end_prediction', '\u00A77Experience per item: 25')
+    
+    //Debug Laser and H.T.T
+    tooltip.addAdvanced('kubejs:hand_framing_tool', (item, advanced, text) => {
+        //TODO-Extract the NBT data from it to show Sides, Front, Trims.
+        text.add(Text.of('NBT: ').append(Text.prettyPrintNbt(item.nbt)));
+        text.add(Text.of('Not prettified NBT: ').append(item.nbt));
+    })
+    
+    tooltip.addAdvanced(`kubejs:debug_laser`, (item, advanced, text) => {
+        text.add(1, [Text.white(`You just need `), Text.yellow(`Creative Mode`), Text.white(` to use this`)]);
+    })
 })
